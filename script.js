@@ -35,3 +35,41 @@ const ejercicio2 = [
     esFamiliar: true,
   },
 ];
+/*const esPrimo = numero => {
+	
+	for (let x = 2; x < numero / 2; x++) {
+		if (numero % x == 0) 
+    return false;
+	}
+	// Si no se pudo dividir por ninguno de los de arriba, sí es primo
+	  return true;
+}
+
+
+console.log(ejercicio1);
+ejercicio1.forEach(numero => {
+  if(esPrimo(numero)== true)
+	console.log(`${numero} es primo`);
+});
+
+/*const permitirEntrar = (persona) => {
+  if(persona.edad >=18 && persona.esFamiliar==true)
+  console.log(`${persona.nombre} puede entrar a la fiesta`)
+
+}
+
+console.log(ejercicio2);
+ejercicio2.forEach((persona)=>{
+ permitirEntrar(persona);
+});*/
+
+function fibonacci(numero)
+    {
+        let numeros=[0,1];
+        for (let i = 2; i < numero; i++) {
+            numeros[i] = numeros[i - 2] + numeros[i - 1];
+        }
+        return numeros;
+    }
+
+    console.log(fibonacci(50));

@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.contenedor{
+    
+    height: 100vh;  /* vh es una medida para nevegadores, en este
+                        caso toma el 100 % del navegador 
+                        existente */
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+   
+    justify-content: center;  /*Alinea el contenido*/
+    align-items: center; /* alinea los elementos*/
+    
+
+}
+.contenedor div{
+    background-color:black;
+}
+.cuadro{
+    
+    width: 600px;
+    height: 600px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.cuadro div{
+    background-color: white;
+}
+
