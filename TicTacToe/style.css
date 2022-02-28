@@ -14,6 +14,7 @@
    
     justify-content: center;  /*Alinea el contenido*/
     align-items: center; /* alinea los elementos*/
+    background-image: url("https://fondosmil.com/fondo/54336.png");
     
 
 }
@@ -31,5 +32,33 @@
 
 .cuadro div{
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cuadro div:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+button{
+    padding: 20px 20px;
+    background-color: rgb(118, 68, 165);
+    color: white;
+    outline: none; 
+    border: 0px;
+    border-radius: 8px;
+    width: 200px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(150, 86, 209);
 }
 
