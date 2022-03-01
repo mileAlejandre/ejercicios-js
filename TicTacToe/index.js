@@ -1,6 +1,7 @@
 
 let turno =false;
 let victoria = false;
+let contador=0;
 const handleclick = (event) => {
   const {id} = event.target;
 
@@ -15,6 +16,7 @@ const handleclick = (event) => {
 }
 
 const verificarVictoria = () =>{
+    contador++;
     const div1 = document.getElementById(1);
     const div2 = document.getElementById(2);
     const div3 = document.getElementById(3);
@@ -65,16 +67,37 @@ const verificarVictoria = () =>{
         div3.innerText === div7.innerText &&
         div3.innerText !=="";
 
-    if(forma1 || forma2 || forma3 || forma4 || forma5 || forma6 || forma7 || forma8)
+    if(forma1 || 
+       forma2 || 
+       forma3 || 
+       forma4 || 
+       forma5 || 
+       forma6 || 
+       forma7 || 
+       forma8)
     {
+        const line = document.getElementById("line");
+
+        line.style.height = '10px';
+        line.style.width = '100%';
+        line.style.top='85px';
+        line.style.left='0px';
+        console.log(line);
         victoria=true;
-        alert("Gano alguien");
+        alert(`Ganador: ${turno ? "O" : "X"}`); 
+    }
+    else{
+        if(contador===9)
+        {
+         alert("Empate");
+        }
     }
 }
 
 const reload = () =>{
     turno = false;
     victoria=false;
+    contador=0;
 
     const div1 = document.getElementById(1);
     const div2 = document.getElementById(2);
@@ -95,5 +118,14 @@ const reload = () =>{
     div7.innerText="";
     div8.innerText="";
     div9.innerText="";
+
+    const line = document.getElementById("line");
+
+        line.style.height = '0px';
+        line.style.width = '0%';
+        line.style.top='0px';
+        line.style.left='0px';
+
+
 
 }

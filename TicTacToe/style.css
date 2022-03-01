@@ -11,16 +11,15 @@
     display: flex;
     flex-direction: row;
     padding: 20px;
-   
     justify-content: center;  /*Alinea el contenido*/
     align-items: center; /* alinea los elementos*/
     background-image: url("https://fondosmil.com/fondo/54336.png");
     
 
 }
-.contenedor div{
-    background-color:black;
-}
+/*.contenedor div{
+    
+}*/
 .cuadro{
     
     width: 600px;
@@ -28,6 +27,10 @@
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    position: relative;
+    background-color: black;
+    
 }
 
 .cuadro div{
@@ -61,4 +64,35 @@ button:hover{
     cursor: pointer;
     background-color: rgb(150, 86, 209);
 }
+.lineContainer{
+    position: relative;
+    
+}
+
+.lineHorizontal{
+    position: absolute;
+    display: block;
+    height: 10px;
+    background-color: rgb(170, 9, 9);
+    width: 100%;
+    top:85px;
+    left: 0px;
+
+   
+}
+.lineVertical{
+    position: absolute;
+    display: block;
+    height: 100%;
+    background-color: rgb(170, 9, 9);
+    width: 10px;
+    top:0px;
+    left: 85px;
+}
+.line{
+    position: absolute;
+    display: block;
+    background-color: rgb(170, 9, 9);
+}
+
 
