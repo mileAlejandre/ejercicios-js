@@ -67,15 +67,7 @@ const verificarVictoria = () =>{
         div3.innerText === div7.innerText &&
         div3.innerText !=="";
 
-    if(forma1 || 
-       forma2 || 
-       forma3 || 
-       forma4 || 
-       forma5 || 
-       forma6 || 
-       forma7 || 
-       forma8)
-    {
+    if(forma1){
         const line = document.getElementById("line");
 
         line.style.height = '10px';
@@ -85,7 +77,93 @@ const verificarVictoria = () =>{
         console.log(line);
         victoria=true;
         alert(`Ganador: ${turno ? "O" : "X"}`); 
+    } 
+    else if(forma2){
+        const line = document.getElementById("line");
+
+        line.style.height = '10px';
+        line.style.width = '100%';
+        line.style.top='300px';
+        line.style.left='0px';
+
+        console.log(line);
+        victoria=true;
+        alert(`Ganador: ${turno ? "O" : "X"}`); 
     }
+    else if(forma3){
+        const line = document.getElementById("line");
+
+        line.style.height = '10px';
+        line.style.width = '100%';
+        line.style.top='500px';
+        line.style.left='0px';
+
+        console.log(line);
+        victoria=true;
+        alert(`Ganador: ${turno ? "O" : "X"}`); 
+    }
+    else if(forma4){
+        const line = document.getElementById("line");
+
+        line.style.height = '100%';
+        line.style.width = '10px';
+        line.style.top='0px';
+        line.style.left='85px';
+
+        console.log(line);
+        victoria=true;
+        alert(`Ganador: ${turno ? "O" : "X"}`); 
+    }
+      else if(forma5){
+        const line = document.getElementById("line");
+
+        line.style.height = '100%';
+        line.style.width = '10px';
+        line.style.top='0px';
+        line.style.left='295px';
+        console.log(line);
+        victoria=true;
+        alert(`Ganador: ${turno ? "O" : "X"}`); 
+      } 
+      else if(forma6){
+        line.style.height = '100%';
+        line.style.width = '10px';
+        line.style.top='0px';
+        line.style.left='500px';
+
+        console.log(line);
+        victoria=true;
+        alert(`Ganador: ${turno ? "O" : "X"}`); 
+      }   
+      else if(forma7){
+        const line = document.getElementById("line");
+
+        line.style.height = '10px';
+        line.style.width = '600px';
+        line.style.top='300px';
+        line.style.left='0px';
+        line.style.transform = 'rotate(45deg)';
+       
+
+        console.log(line);
+        victoria=true;
+        alert(`Ganador: ${turno ? "O" : "X"}`); 
+      }
+       else if(forma8){
+        const line = document.getElementById("line");
+
+        line.style.height = '10px';
+        line.style.width = '600px';
+        line.style.top='300px';
+        line.style.left='0px';
+        line.style.transform = 'rotate(-45deg)';
+
+        console.log(line);
+        victoria=true;
+        alert(`Ganador: ${turno ? "O" : "X"}`); 
+
+       }
+      
     else{
         if(contador===9)
         {
