@@ -73,3 +73,6 @@ function fibonacci(numero)
     }
 
     console.log(fibonacci(50));
+
+
+    
